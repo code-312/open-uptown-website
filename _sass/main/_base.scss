@@ -1,0 +1,24 @@
+header, footer a {
+  color: white !important;
+}
+
+.masthead a {
+  color: white;
+}
+
+.masthead-subtitle {
+  color: white;
+}
+
+header {
+  background-color: #3fa9f5;
+  padding: 1rem;
+
+  .social-icons, .menu a {
+    color: #cf1b41;
+  }
+}
+
+footer {
+  background-color: #cf1b41;
+}

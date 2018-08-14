@@ -1,17 +1,25 @@
 # open-uptown-website
-Our main website!
 
-~~Temporarily~~
+This website was built on [Jekyll](https://jekyllrb.com) as a proof of concept.
 
-1. Get [Docker](https://store.docker.com) for Mac or Windows.
-2. Look at `docker-compose.yml` and run 
-```bash 
-$ docker-compose up -d
+## Instructions
+
+Follow these steps to run it locally or go to [this temporaly url](https://edgargigaramirez.github.io/) to check it out.
+
+1. Install [Jekyll](https://jekyllrb.com) environment.
+2. Edit `Gemfile` file and comment out the following line since this is required only for *GitHub Pages*:
+> gem "github-pages", group: :jekyll_plugins
+3. Then:
+```bash
+$ bundle install
+$ bundle exec jekyll build
+$ bundle exec jekyll serve
 ```
-3. Open [http://localhost:8000](http://localhost:8000) in a web browser.
-4. Shutdown and clean up 
-```bash 
-$ docker-compose down --volumes
-```
 
-Better explained in [https://docs.docker.com/compose/wordpress/#bring-up-wordpress-in-a-web-browser](https://docs.docker.com/compose/wordpress/#bring-up-wordpress-in-a-web-browser)
+## Caveats
+
+For the purpose of this proof of concept this Jekill project is based on the example from Jekyll Documentation and its theme copied from [Lagrange a minimalist Jekyll theme](https://github.com/LeNPaul/Lagrange#github-pages-installation) just to hear feedback from this first draft.
+
+Please leave comments and feedback.
+
+Enjoy!
