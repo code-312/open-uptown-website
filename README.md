@@ -18,7 +18,7 @@ $ bundle exec jekyll serve
 
 ## Caveats
 
-For the purpose of this proof of concept this Jekill project is based on the example from Jekyll Documentation and its theme copied from [Lagrange a minimalist Jekyll theme](https://github.com/LeNPaul/Lagrange#github-pages-installation) just to hear feedback from this first draft.
+- Fix aligment in top bar.
 
 Please leave comments and feedback.
 
