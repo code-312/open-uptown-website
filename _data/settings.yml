@@ -1,0 +1,26 @@
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'https-lenpaul-github-io-lagrange'
+
+google-ID: 'UA-112060364-1'
+
+menu:
+- {name: 'Events', path: 'menu', url: 'events.html'}
+- {name: 'Projects', path: 'menu', url: 'projects.html'}
+- {name: 'About Us', path: 'menu', url: 'about.html'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'github', link: 'https://www.github.com/Open-Uptown'}
+- {icon: 'twitter', link: 'https://twitter.com/'}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/'}
+- {icon: 'envelope', link: 'mailto:Open-Uptown@gmail.com'}
+- {icon: 'rss-square', link: '/feed.xml'}
+# - {icon: 'rss-square', link: '/rss-feed.xml'}
+
+sharing_button_prompt: 'Feel free to share!'
+
+related_posts: 'You may also enjoy:'
+
+post_date_prefix: 'Written on'

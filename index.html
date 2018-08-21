@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+
+<img src="{{ site.github.url }}/assets/img/ou-logo-code.jpg">
+
+<h1>{{ site.description }}</h1>
+
+<nav class="menu-content-inside">
+{% for item in site.data.settings.menu %}
+    <a href="{{ site.github.url }}/{{ item.path }}/{{ item.url }}">
+        <button type="button">{{ item.name }}</button>
+    </a>
+{% endfor %}
+</nav>
+
+<h3>WE FORGE PARTNERSHIPS</h2>
+
+<p>
+between neighbors who use technology to improve interactions with,
+and access to, public services. Whether you're a technologist,
+designer, journalist, public servant, or curious community
+member- there is a place for you here! Join us for our co-working,
+project, service, and social events!
+</p>
