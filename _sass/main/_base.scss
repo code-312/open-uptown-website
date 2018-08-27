@@ -1,4 +1,5 @@
 .container {
+  // 
   width: auto;
 
   header {
@@ -7,18 +8,17 @@
     }
 
     img {
-      height: 64px;
+      max-height: 55.95px;  // Look at .site-header min-height
       border-radius: 0;
+      float: left;
     }
   }
 
-  .masthead {
+  .site-header {
     background-color: #3fa9f5;
-    padding: 0;
-    margin: 0;
 
     a:hover {
-      color: white;
+      color: #cf1b41;
     }
 
     a {
