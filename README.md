@@ -1,6 +1,6 @@
 # open-uptown-website
 
-This website was built on [Jekyll](https://jekyllrb.com) as a proof of concept.
+This website was built on [Jekyll](https://jekyllrb.com).
 
 ## Instructions
 
@@ -15,10 +15,6 @@ $ bundle install
 $ bundle exec jekyll build
 $ bundle exec jekyll serve
 ```
-
-## Caveats
-
-- Fix aligment in top bar.
 
 Please leave comments and feedback.
 
