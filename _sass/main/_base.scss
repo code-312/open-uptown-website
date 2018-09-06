@@ -60,13 +60,43 @@
       }
     }
   }
+}
 
-  footer {
-    margin: 0;
-    background-color: #cf1b41;
+/*
+  Footer
+*/
 
-    a {
-      color: white !important;
+.footer {
+  margin: 0;
+  background-color: #cf1b41;
+  text-align: center;
+  color: white;
+
+  a {
+    padding: 10px;
+    text-decoration: underline;
+    color: white;
+
+    &:hover {
+      color: #333;
     }
   }
+
+  li {
+    list-style-type: none;
+  }
+
+  .legend {
+    color: white;
+    font-size: 0.8rem;
+    padding: 0 40px;
+  }
+}
+
+/*
+  Post
+*/
+
+.post-date {
+  color: white;
 }
