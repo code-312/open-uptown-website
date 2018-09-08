@@ -1,0 +1,25 @@
+---
+layout: events
+title: Events
+---
+
+<div id="events">
+    <h2 class="">{{ page.title }}</h2>
+    <ul class="">
+        {% for event in site.data.meetup.events %}
+        <li>
+            <span class="">{{ event.local_date }} {{ event.local_time }}</span>
+            <h3>
+                <a class="" href="{{ event.link | relative_url }}">
+                {{ event.name | escape }}
+                </a>
+            </h3>
+            <h3>Description</h3>
+            {{ event.description }}
+            <h3>Location</h3>
+            <p>{{ event.venue.address_1 }} {{ event.venue.city }} {{ event.venue.country }} {{ event.venue.state }} {{ event.venue.city }} {{ event.venue.zip }}</p>
+            <br>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
