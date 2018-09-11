@@ -1,5 +1,11 @@
 # open-uptown-website
 
+Temp link: 
+
+https://open-uptown.github.io/open-uptown-website/
+
+## Information for nerds?
+
 This website was built on [Jekyll](https://jekyllrb.com).
 
 ## Instructions
