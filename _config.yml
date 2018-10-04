@@ -14,10 +14,3 @@ sass:
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
-
-
-# Config for 18F/Jekyll-Get
-
-jekyll_get:
-  - data: events
-    json: 'https://api.meetup.com/openuptown/events?&sign=true&photo-host=public&page=2&fields=featured_photo'
