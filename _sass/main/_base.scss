@@ -33,8 +33,11 @@
   }
 
   .post-container {
+    display: block;
+    margin: auto;
+    width: 75%;
     h1, h3, h4 {
-      text-align: center;
+      text-align: left;
     }
 
     h3 {
@@ -43,7 +46,7 @@
 
     p {
       text-align: left;
-      margin: 0 50px;
+      margin: 0;
     }
 
     #ou-logo {
@@ -80,6 +83,11 @@
     p {
       margin: 0 50px;
       text-align: left;
+    }
+
+    .event-timedate-text {
+      font-size: 1rem;
+      color: grey;
     }
 
     .menu-content-inside {
@@ -147,6 +155,13 @@
 */
 
 @include media-query($on-palm) {
+  .post-container {
+    width: 100% !important;
+  }
+
+  .event-timedate-text {
+    color: grey;
+  }
   .events {
     width: 100% !important;
   }
@@ -160,47 +175,66 @@
 }
 
 .events {
-  width: 75%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   h4 {
     margin-top: 0;
     padding-top: 0;
+    padding-left: 3.25rem;
     background-color: #3fa9f5;
+    border-bottom: #cf1b41 solid 1px;
     a {
       color: #ffffff;
+      text-decoration: none;
+      &:hover {
+        color: #cf1b41;
+      }
     }
   }
 
   .event {
+    position: relative;
     display: inline-block;
-    width: 49%;
+    margin-right: 5%;
+    margin-left: 0;
+    width: 50%;
     vertical-align: top;
-    max-height: 50rem;
+    height: 40rem;
     overflow: auto;
   }
 
   .event-photo {
-    max-height: 15rem;
+    max-height: 14rem;
     display: block;
     margin: auto;
   }
 
   .event-content {
-    padding: 5%;
+    padding: 2%;
   }
+   p {
+     padding-top: 1rem;
+   }
 
   .button {
-    padding: .5rem 1rem;
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    padding: .5rem 12.25rem;
     font-size: 1.25rem;
     line-height: 1.5;
     border-radius: .3rem;
-    margin-top: 20px;
-    width: 200px;
     background-color: #3fa9f5;
     border: 0;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
+    &:hover {
+      color: #cf1b41
+    }
+
   }
 
 }
