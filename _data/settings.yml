@@ -6,9 +6,9 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Events', path: 'menu', url: 'events.html'}
-- {name: 'Projects', path: 'menu', url: 'projects.html'}
-- {name: 'About Us', path: 'menu', url: 'about.html'}
+- {name: 'Events', url: "#events"}
+- {name: 'Projects', url: '#projects'}
+- {name: 'About Us', url: '#about'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:

@@ -1,3 +1,6 @@
+@import   
+  "main/header";
+
 .container {
   // 
   width: auto;
@@ -8,27 +11,29 @@
     }
 
     img {
-      max-height: 55.95px;  // Look at .site-header min-height
+      max-height: 5rem;  // Look at .site-header min-height
       border-radius: 0;
       float: left;
     }
   }
 
   .site-header {
-    background-color: #3fa9f5;
+    background-color: #ffffff;
+    border-bottom: #cf1b41 solid 1px;
+    min-height: 5rem;
 
     a:hover {
-      color: #cf1b41;
+      color: #3fa9f5;
     }
 
     a {
-      color: white;
+      color: #cf1b41;
       text-decoration: none;
     }
   }
 
   .post-container {
-    h1, h3 {
+    h1, h3, h4 {
       text-align: center;
     }
 
@@ -37,7 +42,7 @@
     }
 
     p {
-      text-align: center;
+      text-align: left;
       margin: 0 50px;
     }
 
@@ -66,13 +71,15 @@
     }
   }
 
-  .event-container {
+  .event {
+    border: #3fa9f5 solid 1px;
+
     h3 {
       color: #dc3545;
     }
-
     p {
       margin: 0 50px;
+      text-align: left;
     }
 
     .menu-content-inside {
@@ -134,3 +141,68 @@
 .post-date {
   color: white;
 }
+
+/*
+  Events
+*/
+
+@include media-query($on-palm) {
+  .events {
+    width: 100% !important;
+  }
+
+  .event {
+    width: 100% !important;
+    max-height: none !important;
+    overflow: none !important;
+    margin-top: 1rem;
+  }
+}
+
+.events {
+  width: 75%;
+  display: block;
+  margin: auto;
+  h4 {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #3fa9f5;
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .event {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    max-height: 50rem;
+    overflow: auto;
+  }
+
+  .event-photo {
+    max-height: 15rem;
+    display: block;
+    margin: auto;
+  }
+
+  .event-content {
+    padding: 5%;
+  }
+
+  .button {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    margin-top: 20px;
+    width: 200px;
+    background-color: #3fa9f5;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+  }
+
+}
+
+

@@ -1,8 +1,9 @@
-<header class="site-header" role="banner">
+<header id="top" class="site-header" role="banner">
   <div class="wrapper">
       <a class="site-title" href="{{ site.github.url }}/">
         <img src="{{ site.github.url }}/assets/img/flag-red.png" alt="">
       </a>
+      <img id="ou-logo" src="{{site.github.url}}/assets/img/ou-logo-code.jpg"/>
     {% if site.data.settings.menu -%}
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -16,7 +17,7 @@
 
       <div class="trigger">
         {% for item in site.data.settings.menu %}
-          <a class="page-link" href="{{ site.github.url }}/{{ item.path }}/{{ item.url }}">{{ item.name }}</a>
+          <a class="page-link" href="{{ item.url }}">{{ item.name }}</a>
         {% endfor %}
       </div>
     </nav>
